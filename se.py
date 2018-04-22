@@ -3,7 +3,7 @@
 import sys
 system = sys.platform
 print(system)
-#Nos da la fecha del dia
+#Nos da la fecha del dia en la que se hacen las consultas
 from datetime import date
 hoy = date.today()
 print(hoy.strftime("%m-%d-%y. Hoy es %d de %B."))
@@ -85,7 +85,7 @@ elif dist in ["Debian","Ubuntu","debian","ubuntu"]:
 if q in ["Si","si"]:
 	 print("¿Cual es tu problema o duda?")
 	 topic = str(input())
-###Segunos filtros de la pregunta
+###Segundos filtros de la pregunta
 if topic in ['nucleo','Kernel','kernel']:
 	kernel(topic)
 
